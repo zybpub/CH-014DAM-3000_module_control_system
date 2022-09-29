@@ -1,0 +1,3 @@
+G:\CH-014 DAM-3000控制板测试程序系统\DAM-3000控制板测试系统\bin\Debug\控制板测试.exe.config
+G:\CH-014 DAM-3000控制板测试程序系统\DAM-3000控制板测试系统\obj\Debug\控制板测试.exe
+G:\CH-014 DAM-3000控制板测试程序系统\DAM-3000控制板测试系统\obj\Debug\控制板测试.pdb

@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6A4BA03-B815-4332-8C56-4A6CC9E00A76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>控制板测试</RootNamespace>
+    <AssemblyName>控制板测试</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>64X64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>.\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crc.cs" />
+    <Compile Include="DAM3000M.cs" />
+    <Compile Include="DAM3000M_ZYB.cs" />
+    <Compile Include="excel.cs" />
+    <Compile Include="Form_dam-3011D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dam-3011D.Designer.cs">
+      <DependentUpon>Form_dam-3011D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_dam-3053.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dam-3053.Designer.cs">
+      <DependentUpon>Form_dam-3053.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_dam-3059.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dam-3059.Designer.cs">
+      <DependentUpon>Form_dam-3059.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_dam-3070.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dam-3070.Designer.cs">
+      <DependentUpon>Form_dam-3070.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_dam_3014D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_dam_3014D.Designer.cs">
+      <DependentUpon>Form_dam_3014D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_multimeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_multimeter.designer.cs">
+      <DependentUpon>Form_multimeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_main.Designer.cs">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_oscilloscope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_oscilloscope.Designer.cs">
+      <DependentUpon>Form_oscilloscope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_multimeter-DM3058E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_multimeter-DM3058E.Designer.cs">
+      <DependentUpon>Form_multimeter-DM3058E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_product_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_product_settings.Designer.cs">
+      <DependentUpon>Form_product_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_settings.Designer.cs">
+      <DependentUpon>Form_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_test_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_test_data.Designer.cs">
+      <DependentUpon>Form_test_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_values_range.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_values_range.Designer.cs">
+      <DependentUpon>Form_values_range.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_worker_setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_worker_setting.Designer.cs">
+      <DependentUpon>Form_worker_setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="global_values.cs" />
+    <Compile Include="myvisa32.cs" />
+    <Compile Include="Form_power_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_power_test.Designer.cs">
+      <DependentUpon>Form_power_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pcba_databaseDataSet.cs">
+      <DependentUpon>pcba_databaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pcba_databaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pcba_databaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="visa32.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dam-3011D.resx">
+      <DependentUpon>Form_dam-3011D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dam-3053.resx">
+      <DependentUpon>Form_dam-3053.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dam-3059.resx">
+      <DependentUpon>Form_dam-3059.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dam-3070.resx">
+      <DependentUpon>Form_dam-3070.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_dam_3014D.resx">
+      <DependentUpon>Form_dam_3014D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_multimeter.resx">
+      <DependentUpon>Form_multimeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_main.resx">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_oscilloscope.resx">
+      <DependentUpon>Form_oscilloscope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_power_test.resx">
+      <DependentUpon>Form_power_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_multimeter-DM3058E.resx">
+      <DependentUpon>Form_multimeter-DM3058E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_product_settings.resx">
+      <DependentUpon>Form_product_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_settings.resx">
+      <DependentUpon>Form_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_test_data.resx">
+      <DependentUpon>Form_test_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_values_range.resx">
+      <DependentUpon>Form_values_range.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_worker_setting.resx">
+      <DependentUpon>Form_worker_setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="pcba_databaseDataSet.xsc">
+      <DependentUpon>pcba_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pcba_databaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pcba_databaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pcba_databaseDataSet.xss">
+      <DependentUpon>pcba_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="资料\DAM-3000模板\DAM-3000用户向导%28V6.17%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM-3011D%28V6.3.00%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM-3014D%28V6.15%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM-3053%28V1.9%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM-3070%28v6.13%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM-3070%28V6.14%29.pdf" />
+    <None Include="资料\DAM-3000模板\DAM3000MS.pdf" />
+    <None Include="资料\串口卡\CP-112UL_114UL_Series_QIG_v3.pdf" />
+    <None Include="资料\数字多用表DM3058E\DM3058_DataSheet_CN.pdf" />
+    <None Include="资料\数字多用表DM3058E\DM3058_UserGuide_CN.pdf" />
+    <None Include="资料\数字多用表DM3058E\DM3058ï¼DM3058E编程手册.pdf" />
+    <None Include="资料\数字多用表DM3058E\Ultra Sigma_CN.chm" />
+    <None Include="资料\示波器DS1000E Programming Guide.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+    <Content Include="48X48.ico" />
+    <Content Include="64X64.ico" />
+    <Content Include="已处理\数字多用表调用visa32错误.png" />
+    <Content Include="最后更新2017-9-10.txt" />
+    <Content Include="资料\串口卡\driv_win_smart_v1.23_build_16021511_whql.exe" />
+    <Content Include="资料\数字多用表DM3058E\URL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bak\" />
+    <Folder Include="待处理\" />
+    <Folder Include="资料\直流电源IT6833 72V3A\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
