@@ -382,7 +382,7 @@ namespace 控制板测试 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class 产品DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class 产品DataTable : global::System.Data.TypedTableBase<产品Row> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -511,12 +511,6 @@ namespace 控制板测试 {
             public 产品Row FindByid(int id) {
                 return ((产品Row)(this.Rows.Find(new object[] {
                             id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -695,7 +689,7 @@ namespace 控制板测试 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class 系统设置DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class 系统设置DataTable : global::System.Data.TypedTableBase<系统设置Row> {
             
             private global::System.Data.DataColumn column当前产品id;
             
@@ -784,12 +778,6 @@ namespace 控制板测试 {
                 row系统设置Row.ItemArray = columnValuesArray;
                 this.Rows.Add(row系统设置Row);
                 return row系统设置Row;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -948,7 +936,7 @@ namespace 控制板测试 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class 产品测量值合格范围DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class 产品测量值合格范围DataTable : global::System.Data.TypedTableBase<产品测量值合格范围Row> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -1191,12 +1179,6 @@ namespace 控制板测试 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 产品测量值合格范围DataTable cln = ((产品测量值合格范围DataTable)(base.Clone()));
                 cln.InitVars();
@@ -1398,7 +1380,7 @@ namespace 控制板测试 {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class 产品测试数据DataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
+        public partial class 产品测试数据DataTable : global::System.Data.TypedTableBase<产品测试数据Row> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -1747,12 +1729,6 @@ namespace 控制板测试 {
             public 产品测试数据Row FindByid(int id) {
                 return ((产品测试数据Row)(this.Rows.Find(new object[] {
                             id})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public virtual global::System.Collections.IEnumerator GetEnumerator() {
-                return this.Rows.GetEnumerator();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

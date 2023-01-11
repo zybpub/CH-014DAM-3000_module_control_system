@@ -18,6 +18,12 @@ namespace 控制板测试
             //获取当前产品id
             pcba_databaseDataSetTableAdapters.系统设置TableAdapter table_sys = new pcba_databaseDataSetTableAdapters.系统设置TableAdapter();
 
+            try {
+                global_values.产品id = Convert.ToInt16(table_sys.Get当前产品id());
+            } catch (Exception ex) {
+                MessageBox.Show("无法连接mssql数据库");
+                return;
+            }
             global_values.产品id = Convert.ToInt16(table_sys.Get当前产品id());
             global_values.当前测试班组 = table_sys.get当前测试班组();
             global_values.当前测试人=table_sys.get当前测试人();

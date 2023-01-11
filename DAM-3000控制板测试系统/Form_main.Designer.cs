@@ -312,6 +312,9 @@
             this.btn_poweroff = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lb_status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label79 = new System.Windows.Forms.Label();
             this.btn_start = new System.Windows.Forms.Button();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
@@ -322,6 +325,8 @@
             this.产品测试数据TableAdapter = new 控制板测试.pcba_databaseDataSetTableAdapters.产品测试数据TableAdapter();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.产品测量值合格范围TableAdapter = new 控制板测试.pcba_databaseDataSetTableAdapters.产品测量值合格范围TableAdapter();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -2225,7 +2230,7 @@
             this.数据ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1341, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1341, 25);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -2234,13 +2239,13 @@
             this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.退出ToolStripMenuItem});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
-            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.文件ToolStripMenuItem.Text = "文件";
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -2249,13 +2254,13 @@
             this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.关于ToolStripMenuItem});
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
@@ -2273,76 +2278,76 @@
             this.输出2014DToolStripMenuItem,
             this.输入3011DToolStripMenuItem});
             this.测试ToolStripMenuItem.Name = "测试ToolStripMenuItem";
-            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.测试ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.测试ToolStripMenuItem.Text = "测试";
             // 
             // 设置ToolStripMenuItem
             // 
             this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
-            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.设置ToolStripMenuItem.Text = "系统设置";
             this.设置ToolStripMenuItem.Click += new System.EventHandler(this.设置ToolStripMenuItem_Click);
             // 
             // 直流电源ToolStripMenuItem
             // 
             this.直流电源ToolStripMenuItem.Name = "直流电源ToolStripMenuItem";
-            this.直流电源ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.直流电源ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.直流电源ToolStripMenuItem.Text = "直流电源IT6833";
             this.直流电源ToolStripMenuItem.Click += new System.EventHandler(this.直流电源ToolStripMenuItem_Click);
             // 
             // 数字多用表测试ToolStripMenuItem
             // 
             this.数字多用表测试ToolStripMenuItem.Name = "数字多用表测试ToolStripMenuItem";
-            this.数字多用表测试ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.数字多用表测试ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.数字多用表测试ToolStripMenuItem.Text = "数字多用表测试";
             this.数字多用表测试ToolStripMenuItem.Click += new System.EventHandler(this.数字多用表测试ToolStripMenuItem_Click);
             // 
             // 数字多用表ToolStripMenuItem
             // 
             this.数字多用表ToolStripMenuItem.Name = "数字多用表ToolStripMenuItem";
-            this.数字多用表ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.数字多用表ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.数字多用表ToolStripMenuItem.Text = "数字多用表DM3058E";
             this.数字多用表ToolStripMenuItem.Click += new System.EventHandler(this.数字多用表ToolStripMenuItem_Click);
             // 
             // 示波器测试ToolStripMenuItem
             // 
             this.示波器测试ToolStripMenuItem.Name = "示波器测试ToolStripMenuItem";
-            this.示波器测试ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.示波器测试ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.示波器测试ToolStripMenuItem.Text = "示波器测试DS1102E";
             this.示波器测试ToolStripMenuItem.Click += new System.EventHandler(this.示波器测试ToolStripMenuItem_Click);
             // 
             // 数据采集DM3053ToolStripMenuItem
             // 
             this.数据采集DM3053ToolStripMenuItem.Name = "数据采集DM3053ToolStripMenuItem";
-            this.数据采集DM3053ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.数据采集DM3053ToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.数据采集DM3053ToolStripMenuItem.Text = "数据采集DAM-3053";
             this.数据采集DM3053ToolStripMenuItem.Click += new System.EventHandler(this.数据采集DM3053ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(178, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(198, 22);
             this.toolStripMenuItem2.Text = "数据采集DAM-3059";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(178, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(198, 22);
             this.toolStripMenuItem3.Text = "频率计数器DAM-3070";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // 输出2014DToolStripMenuItem
             // 
             this.输出2014DToolStripMenuItem.Name = "输出2014DToolStripMenuItem";
-            this.输出2014DToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.输出2014DToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.输出2014DToolStripMenuItem.Text = "输出DAM-3014D";
             this.输出2014DToolStripMenuItem.Click += new System.EventHandler(this.输出2014DToolStripMenuItem_Click);
             // 
             // 输入3011DToolStripMenuItem
             // 
             this.输入3011DToolStripMenuItem.Name = "输入3011DToolStripMenuItem";
-            this.输入3011DToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.输入3011DToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.输入3011DToolStripMenuItem.Text = "输入DAM-3011D";
             this.输入3011DToolStripMenuItem.Click += new System.EventHandler(this.输入3011DToolStripMenuItem_Click);
             // 
@@ -2353,27 +2358,27 @@
             this.合格值范围ToolStripMenuItem,
             this.人员设置ToolStripMenuItem});
             this.产品设置ToolStripMenuItem1.Name = "产品设置ToolStripMenuItem1";
-            this.产品设置ToolStripMenuItem1.Size = new System.Drawing.Size(41, 20);
+            this.产品设置ToolStripMenuItem1.Size = new System.Drawing.Size(44, 21);
             this.产品设置ToolStripMenuItem1.Text = "设置";
             // 
             // 产品设置ToolStripMenuItem2
             // 
             this.产品设置ToolStripMenuItem2.Name = "产品设置ToolStripMenuItem2";
-            this.产品设置ToolStripMenuItem2.Size = new System.Drawing.Size(130, 22);
+            this.产品设置ToolStripMenuItem2.Size = new System.Drawing.Size(136, 22);
             this.产品设置ToolStripMenuItem2.Text = "产品设置";
             this.产品设置ToolStripMenuItem2.Click += new System.EventHandler(this.产品设置ToolStripMenuItem2_Click);
             // 
             // 合格值范围ToolStripMenuItem
             // 
             this.合格值范围ToolStripMenuItem.Name = "合格值范围ToolStripMenuItem";
-            this.合格值范围ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.合格值范围ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.合格值范围ToolStripMenuItem.Text = "合格值范围";
             this.合格值范围ToolStripMenuItem.Click += new System.EventHandler(this.合格值范围ToolStripMenuItem_Click);
             // 
             // 人员设置ToolStripMenuItem
             // 
             this.人员设置ToolStripMenuItem.Name = "人员设置ToolStripMenuItem";
-            this.人员设置ToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.人员设置ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.人员设置ToolStripMenuItem.Text = "人员设置";
             this.人员设置ToolStripMenuItem.Click += new System.EventHandler(this.人员设置ToolStripMenuItem_Click);
             // 
@@ -2382,13 +2387,13 @@
             this.数据ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.测试数据ToolStripMenuItem});
             this.数据ToolStripMenuItem.Name = "数据ToolStripMenuItem";
-            this.数据ToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.数据ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.数据ToolStripMenuItem.Text = "数据";
             // 
             // 测试数据ToolStripMenuItem
             // 
             this.测试数据ToolStripMenuItem.Name = "测试数据ToolStripMenuItem";
-            this.测试数据ToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.测试数据ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.测试数据ToolStripMenuItem.Text = "测试数据";
             this.测试数据ToolStripMenuItem.Click += new System.EventHandler(this.测试数据ToolStripMenuItem_Click);
             // 
@@ -2950,7 +2955,12 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lb_status});
+            this.lb_status,
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3,
+            this.toolStripStatusLabel5,
+            this.toolStripStatusLabel4});
             this.statusStrip1.Location = new System.Drawing.Point(0, 842);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1341, 22);
@@ -2960,8 +2970,26 @@
             // lb_status
             // 
             this.lb_status.Name = "lb_status";
-            this.lb_status.Size = new System.Drawing.Size(197, 17);
+            this.lb_status.Size = new System.Drawing.Size(209, 17);
             this.lb_status.Text = "pcba测试软件（最近更新2017-9-5）";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(111, 17);
+            this.toolStripStatusLabel1.Text = "软件代号：CH-014";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(212, 17);
+            this.toolStripStatusLabel2.Text = "四川启睿克科技有限公司检测校准中心";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(33, 17);
+            this.toolStripStatusLabel3.Text = "V2.0";
             // 
             // label79
             // 
@@ -3027,6 +3055,18 @@
             // 
             this.产品测量值合格范围TableAdapter.ClearBeforeFill = true;
             // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(160, 17);
+            this.toolStripStatusLabel4.Text = "vs2015 netframework4.5.2";
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(272, 17);
+            this.toolStripStatusLabel5.Text = "                                                                  ";
+            // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -3054,7 +3094,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "控制板测试程序V1.0";
+            this.Text = "控制板测试程序";
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -3381,6 +3421,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolStripMenuItem 人员设置ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
     }
 }
 
